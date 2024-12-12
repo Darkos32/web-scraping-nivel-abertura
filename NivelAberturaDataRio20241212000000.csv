@@ -1,0 +1,97 @@
+ID,nome,completo,primário,oportuno,acessível,processável por máquina,não discriminatório,não proprietário,licensa livre,NAD
+1,Transporte Rodoviário: API de GPS dos ônibus (SPPO) [beta],0.25,0,0.3,1,0,1,1,1,3.55
+2,"Movimento total de carga, segundo o tipo de navegação e a natureza da carga, no Porto do Rio de Janeiro entre 1990-2023",0.75,1,0.6,1,0.2,1,0,1,5.55
+3,Principais incidências mensais de infração de trânsito no Estado do Rio de Janeiro entre 2001-2023,0.75,1,0.6,1,0.2,1,0,1,5.55
+4,Movimento de cargas e correio nos aeroportos no Município do Rio de Janeiro entre 1994-2014,0.75,1,0.6,1,0.2,1,0,1,5.55
+5,Trajeto VLT,1.0,1,0.3,1,1,1,1,1,6.30
+6,Estações Bonde,0.25,0,0.3,1,0,1,1,1,3.55
+7,Total da frota de veículos segundo as principais classificações do Código de Trânsito Brasileiro no Município do Rio de Janeiro entre 1994-2023,0.75,1,0.6,1,0.2,1,0,1,5.55
+8,BRS (Serviço Rápido de Ônibus),1.0,1,0.3,1,1,1,1,1,6.30
+9,"Movimentação de desembarque de carga de contêiner, segundo a dimensão pela navegação de longo curso, no Porto do Rio de Janeiro entre 1994-2009",0.75,1,0.6,1,0.2,1,0,1,5.55
+10,"Média anual de passageiros, por dia, na linha de barcas Rio-Niterói-Rio entre 1970-2023",0.75,1,0.6,1,0.2,1,0,1,5.55
+11,Indicadores de desempenho mensal do sistema de transporte de ônibus no Município do Rio de Janeiro entre 1984-2018,0.75,1,0.6,1,0.2,1,0,1,5.55
+12,Trajetos Trem,1.0,1,0.3,1,1,1,1,1,6.30
+13,"Movimentação de embarcações e passageiros no terminal de passageiros, segundo o sentido de navegação, no Porto do Rio de Janeiro entre 2000-2023",0.75,1,0.6,1,0.2,1,0,1,5.55
+14,Itinerários de Serviços de Ônibus Regulares,1.0,1,0.3,1,1,1,1,1,6.30
+15,"Passageiros transportados, por dia e por trajeto, no sistema hidroviário do Município do Rio de Janeiro entre 1994-2023",0.75,1,0.6,1,0.2,1,0,1,5.55
+16,Transporte Rodoviário: API de GPS do BRT [beta],0.25,0,0.3,1,0,1,1,1,3.55
+17,Itinerários de STPL (Sistema de Transporte Público Local),1.0,1,0.3,1,1,1,1,1,6.30
+18,"Carga desembarcada na área do porto organizado no Porto do Rio de Janeiro, segundo o tipo de navegação e natureza da carga, no Município do Rio de Janeiro entre 1990-2012",0.75,1,0.6,1,0.2,1,0,1,5.55
+19,Transporte Rodoviário: Histórico de GPS do BRT,0.25,0,0.3,0,0,1,1,0,1.55
+20,Transporte Rodoviário: Viagens dos ônibus identificadas por GPS,0.25,0,0.3,0,0,1,1,0,1.55
+21,"Movimento, segundo natureza da carga e sentido de navegação, no Porto do Rio de Janeiro entre 1968-2023",0.75,1,0.6,1,0.2,1,0,1,5.55
+22,Demonstrativo geral das principais infrações de trânsito no Município do Rio de Janeiro entre 1998-2017,0.75,1,0.6,1,0.2,1,0,1,5.55
+23,Painel.RIO,0.25,0,0.3,0,0,1,1,0,1.55
+24,Total de automóveis cadastrados nas vinte principais infrações de trânsito registradas pela Guarda Municipal no Município do Rio de Janeiro entre 2003-2010,0.75,1,0.6,1,0.2,1,0,1,5.55
+25,Estações Metrô,1.0,1,0.3,1,1,1,1,1,6.30
+26,Transporte Rodoviário: Viagens dos ônibus identificadas por GPS,0.25,0,0.3,0,0,1,1,0,1.55
+27,"Movimento total de contêineres, segundo a dimensão, tipo de navegação e peso bruto, no Porto do Rio de Janeiro entre 1994-2023",0.75,1,0.6,1,0.2,1,0,1,5.55
+28,"Total de linhas, frota operante, passageiros transportados, viagens realizadas, quilometragem coberta, combustível utilizado e pessoal ocupado pelo sistema de ônibus no Município do Rio de Janeiro entre 1984-2023",0.75,1,0.6,1,0.2,1,0,1,5.55
+29,"Passageiros transportados, número de partidas, quilômetros percorridos, frota média, lugares ofertados e taxa de ocupação nas linhas de bonde de Santa Teresa no Município do Rio de Janeiro entre 1990 e 2023",0.75,1,0.3,1,0.2,1,0,1,5.25
+30,"Movimentação, segundo natureza de carga, no Porto do Rio de Janeiro entre 1968-2009",0.75,1,0.6,1,0.2,1,0,1,5.55
+31,"Movimentação total de desembarque de carga de contêiner, segundo dimensão, no Porto do Rio de Janeiro entre 1994-2009",0.75,1,0.6,1,0.2,1,0,1,5.55
+32,Multas aplicadas aos modos de transporte nos últimos cinco anos,0.25,0,0.3,1,0,1,1,1,3.55
+33,Movimento de passageiros e de aeronaves nos aeroportos no Município do Rio de Janeiro entre 1994-2023,0.75,1,0.6,1,0.2,1,0,1,5.55
+34,"Total de equipamentos de fiscalização eletrônica de velocidade de veículos instalados por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões Administrativas (RA) e Bairros no Município do Rio de Janeiro - 2016",0.75,1,0.3,1,0.2,1,0,1,5.25
+35,"Movimentação de embarque de carga em contêineres, segundo a dimensão pela navegação de cabotagem, no Porto do Rio de Janeiro entre 1994-2009",0.75,1,0.6,1,0.2,1,0,1,5.55
+36,"Movimento internacional e doméstico de passageiros, aeronaves e cargas nos aeroportos no Município do Rio de Janeiro entre 2003-2014",0.75,1,0.6,1,0.2,1,0,1,5.55
+37,Total mensal de transferência de propriedade de veículos no Município do Rio de Janeiro entre 2001-2023,0.75,1,0.6,1,0.2,1,0,1,5.55
+38,"Movimento anual, média diária de ônibus e passageiros e média de passageiros por ônibus na Rodoviária Novo Rio entre 1992-2023",0.75,1,0.6,1,0.2,1,0,1,5.55
+39,"Movimentação total de contêiner, segundo a dimensão, no Porto do Rio de Janeiro entre 1994-2008",0.75,1,0.6,1,0.2,1,0,1,5.55
+40,"Passageiros transportados, por trajeto, no sistema hidroviário no Município do Rio de Janeiro entre 1994-2023",0.75,1,0.6,1,0.2,1,0,1,5.55
+41,"Passageiros transportados no sistema VLT, segundo as estações, no Município do Rio de Janeiro entre 2016-2023",0.75,1,0.6,1,0.2,1,0,1,5.55
+42,Estações de Trem,0.25,0,0.3,1,0,1,1,1,3.55
+43,"Publicação DATARIO - O Rio em Números: Cidade, Infraestrutura, Economia, Capital Humano, Qualidade de Vida, Turismo, Rio Globalizado, Petróleo e Gás Natural (Setembro/2010)",0.5,0,0.3,0,0,1,1,0,1.80
+44,Indicadores do sistema de ônibus no Município do Rio de Janeiro entre 1984-2018,0.75,1,0.6,1,0.2,1,0,1,5.55
+45,Rede Cicloviária planejada,1.0,1,0.3,1,1,1,1,1,6.30
+46,Trajetos Metrô,1.0,1,0.3,1,1,1,1,1,6.30
+47,"Movimento de embarcações (atracações), segundo o sentido e tipo de navegação, no Porto do Rio de Janeiro entre 2010-2023",0.75,1,0.6,1,0.2,1,0,1,5.55
+48,Plano Verão 2022/2023: Ações Estratégicas e Integradas,0.5,0,0.3,0,0,1,1,0,1.80
+49,Trajetos BRT,1.0,1,0.3,1,1,1,1,1,6.30
+50,Viagens realizadas e passageiros transportados nos terminais rodoviários administrados pela CODERTE e SOCICAM no Município do Rio de Janeiro - 1990-2023,0.75,1,0.6,1,0.2,1,0,1,5.55
+51,"Localização das principais vias terrestres (rodoviárias, ferroviárias e metroviárias) no Município do Rio de Janeiro - 2004",0.5,0,0.3,1,0,1,1,1,3.80
+52,Garagens de operadores do Serviço Público de Transporte Coletivo de Passageiros por Ônibus (SPPO) no Município do Rio de Janeiro em 2021,1.0,1,0.6,1,1,1,1,1,6.60
+53,Dados do sistema Comando (COR): procedimento operacional padrao,0.25,0,0.3,0,0,1,1,0,1.55
+54,Estações VLT,1.0,1,0.3,1,1,1,1,1,6.30
+55,"Movimentação de desembarque de carga de contêiner, segundo a dimensão pela navegação de cabotagem, no Porto do Rio de Janeiro entre 1994-2009",0.75,1,0.6,1,0.2,1,0,1,5.55
+56,"Movimento de passageiros segundo os transportes rodoviário, ferroviário, hidroviário e aeroviário no Município do Rio de Janeiro entre 1995-2023",0.5,0,0.6,0,0,1,1,0,2.10
+57,"Movimentação total de carga em contêineres, segundo a dimensão no Porto do Rio de Janeiro no Município do Rio de Janeiro - 1994-2009",0.75,1,0.6,1,0.2,1,0,1,5.55
+58,"Fluxo de passageiros, embarcados por dia, no subsistema do sistema ferroviário entre 1995-2023",0.75,1,0.6,1,0.2,1,0,1,5.55
+59,Estações BRT,1.0,1,0.3,1,1,1,1,1,6.30
+60,Transporte Rodoviário: Subsídio dos ônibus (SPPO),0.25,0,0.3,0,0,1,1,0,1.55
+61,Rede Cicloviária implantada,1.0,1,0.3,1,1,1,1,1,6.30
+62,"Passageiros transportados no sistema BRT, segundo as estações, no Município do Rio de Janeiro entre 2012-2023",0.75,1,0.6,0,0.2,1,0,0,3.55
+63,Transporte Rodoviário: Histórico de GPS dos ônibus (SPPO),0.25,0,0.3,0,0,1,1,0,1.55
+64,"Total anual e fluxo médio diário de passageiros das redes hidróviária, metroviária e ferroviária por Áreas de Planejamento (AP), Regiões de Planejamento (RP), Regiões Administrativas (RA) e Bairros do Município do Rio de Janeiro entre 2016-2017",0.75,1,0.6,1,0.2,1,0,1,5.55
+65,Mapa Digital das Rotas Cicloviarias do Rio de Janeiro,0.25,0,0.3,1,0,1,1,1,3.55
+66,Movimento anual de passageiros embarcados por estações e subsistemas do sistema ferroviário entre 1995-2023,0.75,1,0.6,1,0.2,1,0,1,5.55
+67,Pontos de Parada da rede de transporte público por ônibus (SPPO),1.0,1,0.3,1,1,1,1,1,6.30
+68,Evolução da extensão de ciclovias por Áreas de Planejamento (AP) do Município do Rio de Janeiro entre 1990-2011,0.75,1,0.6,1,0.2,1,0,1,5.55
+69,Logradouros,1.0,1,0.3,1,1,1,1,1,6.30
+70,Fluxo médio de passageiros por dia útil nas linhas da rede metroviária no Município do Rio de Janeiro entre 1995-2023,0.75,1,0.6,1,0.2,1,0,1,5.55
+71,Trajeto Bonde,0.25,0,0.3,1,0,1,1,1,3.55
+72,Estações Teleférico,0.25,0,0.3,1,0,1,1,1,3.55
+73,Aeroportos,0.25,0,0.3,1,0,1,1,1,3.55
+74,"Carga embarcada no Porto do Rio de Janeiro, segundo o tipo de navegação e a a natureza da carga, no Município do Rio de Janeiro entre 1990-2012",0.75,1,0.6,1,0.2,1,0,1,5.55
+75,NOTA TÉCNICA 02 - Análise da morbimortalidade pré-hospitalar por acidentes de transporte terrestre no Município do Rio de Janeiro em 2007 (Setembro/2012),0.75,0,0.6,1,0.2,1,1,1,4.55
+76,Plano Verão 2023/2024: Ações Estratégicas e Integradas,0.5,0,0.3,0,0,1,1,0,1.80
+77,Trajeto dos Teleféricos,0.25,0,0.3,1,0,1,1,1,3.55
+78,"Movimentação total de embarque de carga em contêineres, segundo a dimensão, no Porto do Rio de Janeiro entre 1994-2009",0.75,1,0.6,1,0.2,1,0,1,5.55
+79,Barcas,0.25,0,0.3,1,0,1,1,1,3.55
+80,Administração de Serviços Públicos: Chamados feitos ao 1746,0.25,0,0.3,0,0,1,1,0,1.55
+81,Monitoramento das Emissões de Gases de Efeito Estufa da Cidade do Rio de Janeiro - 2012 a 2021 (Novembro/2023),0.5,0,0.6,0,0,1,1,0,2.10
+82,Indicadores de desempenho diário do sistema de transporte de ônibus no Município do Rio de Janeiro entre 1984-2018,0.75,1,0.6,1,0.2,1,0,1,5.55
+83,Transporte Público,0.25,0,0.3,0,0,1,1,0,1.55
+84,Fluxo médio diário de passageiros e de aeronaves nos aeroportos no Município do Rio de Janeiro entre 1994-2023,0.75,1,0.6,1,0.2,1,0,1,5.55
+85,População e taxa de motorização por tipo de veículo no Município do Rio de Janeiro entre 1994-2022,0.75,1,0.6,1,0.2,1,0,1,5.55
+86,"Movimento médio diário de passageiros, segundo os transportes rodoviário, ferroviário, hidroviário e aeroviário no Município do Rio de Janeiro entre 1995-2023",0.5,0,0.6,0,0,1,1,0,2.10
+87,"Passageiros transportados no Metrô, segundo as estações e linhas no Município do Rio de Janeiro entre 1995-2023",0.75,1,0.6,1,0.2,1,0,1,5.55
+88,,0.25,0,0.0,0,0,1,1,0,1.25
+89,"Movimentação na área de porto organizado, segundo natureza de carga e sentido da navegação, no Porto do Rio de Janeiro entre 1990-2012",0.75,1,0.6,1,0.2,1,0,1,5.55
+90,Indicadores de desempenho anual do sistema de transporte de ônibus no Município do Rio de Janeiro entre 1984-2018,0.75,1,0.6,1,0.2,1,0,1,5.55
+91,Total mensal e anual de novos licenciamento de veículos no Município do Rio de Janeiro entre 2001-2023,0.75,1,0.6,1,0.2,1,0,1,5.55
+92,Dados cadastrais dos veículos que operam o sistema de ônibus (BRT e SPPO),0.25,0,0.3,1,0,1,1,1,3.55
+93,GTFS do Rio de Janeiro,0.75,1,0.3,1,0.5,1,1,1,5.55
+94,"Total mensal de passageiros transportados no Metrô, segundo as estações e linhas, no Município do Rio de Janeiro entre 1998 e 2024",0.75,1,0.3,0,0.2,1,0,0,3.25
+95,"Movimento de embarcações, por tipo de navegação, no Porto do Rio de Janeiro entre 2000-2009",0.75,1,0.6,1,0.2,1,0,1,5.55
+96,Monitoramento das Emissões de Gases de Efeito Estufa da Cidade do Rio de Janeiro 2012 a 2017: Apresentação dos resultados (Junho/2019),0.5,0,0.6,0,0,1,1,0,2.10
