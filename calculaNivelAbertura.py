@@ -155,7 +155,7 @@ def getconjuntoDeDados(url,id):
             'acesso': None
     }
     CONST_BROWSER.get(url)# retorna a página 
-    sleep(20) #garante que todo o html da página seja carregada
+    sleep(25) #garante que todo o html da página seja carregada
     try:
         conjunto["id"] = id
         conjunto["nome"] = getNomeconjuntoDeDadoss()
@@ -240,57 +240,59 @@ def upperString(string):
     return string.upper()
 #Um padrão de código que se repetiu durante a implmentação e foi modularizado. Cria um set a partir de uma lista de strings capitalizando todas as letras
 def criarStringSetDeLista(lista):
-    return set(map(upperString,lista))
+    return set(map(str.lstrip,map(upperString,lista)))
 def comparaSetComFormatosDoConjuntoDeDados(conjuntoDeDados,listaComparada):
     CONST_CONJUNTO_COMPARADO = criarStringSetDeLista(listaComparada)
-    CONST_CONJUNTO_FORMATO_CONJUNTO_DE_DADOS = criarStringSetDeLista(conjuntoDeDados['formato']) 
+    CONST_CONJUNTO_FORMATO_CONJUNTO_DE_DADOS = criarStringSetDeLista(conjuntoDeDados['formato'].replace('[','').replace(']','').replace("'",'').split(',')) 
     return len(CONST_CONJUNTO_FORMATO_CONJUNTO_DE_DADOS & CONST_CONJUNTO_COMPARADO)>0
 #Retorna se os formatos de arquivo em que um conjunto de dados está disponibilizados é ou não legível. Diferentemente da função avaliaProcessavelPorMaquina não se mede o quão legível. Apenas se é.
 def isLegivelPorMaquina(conjuntoDeDados):
     return comparaSetComFormatosDoConjuntoDeDados(conjuntoDeDados,['PDF','XLS','CSV','XML','RDF','MiCrosoft Excel','geojson','kml','shapefile','csv collection'])
-
-def isLinkedData(conjuntoDeDados):
-    return comparaSetComFormatosDoConjuntoDeDados(conjuntoDeDados,['nt','rdf','ttl','json']) 
+ 
 #Calcula o valor do indicador completo de um conjunto de dados
 def avaliaCompleto(conjuntoDeDados):           
-    return 0.25*conjuntoDeDados['possuiBotaoDownload'] + 0.25*conjuntoDeDados['descricao'] +0.25*isLegivelPorMaquina(conjuntoDeDados)+ 0.25*isLinkedData(conjuntoDeDados)
+    return 0.25*(conjuntoDeDados['possuiDownload']=='True') + 0.25*bool(conjuntoDeDados['descricao']) +0.25*isLegivelPorMaquina(conjuntoDeDados)+ 0.25
 def avaliaPrimario(conjuntoDeDados):
     return int(comparaSetComFormatosDoConjuntoDeDados(conjuntoDeDados,['csv','geojson','xls','shapefile','kml','csv collection','Microsoft Excel']))
 def avaliaOportuno(conjuntoDeDados):
-    return 0.3*(conjuntoDeDados['dataPublicacao']!='') + 0.3*(conjuntoDeDados['dataAtualizacao']!='')
-def avaliaAcessivel():
-    return 
+    return (0.3*(conjuntoDeDados['periodoTempo']!='')) +0.3*(conjuntoDeDados['dataAtualizacao']!='')
+def avaliaAcessivel(conjuntoDeDados):
+    return 1*(conjuntoDeDados['acesso']=='Público' and conjuntoDeDados['licensa'] == 'CC BY 4.0')
 def avaliaProcessavelPorMaquina(conjuntoDeDados):
-    if comparaSetComFormatosDoConjuntoDeDados(conjuntoDeDados,['pdf','xls','MiCrosoft Excel']):
-        return 0.2
+    if comparaSetComFormatosDoConjuntoDeDados(conjuntoDeDados,['kml','nt','rdf','ttl','rdf','xml']):
+        return 1
     elif comparaSetComFormatosDoConjuntoDeDados(conjuntoDeDados,['csv','csv collection','geojson','shapefile']):
         return 0.5
-    elif comparaSetComFormatosDoConjuntoDeDados(conjuntoDeDados,['kml','nt','rdf','ttl','rdf','xml']):
-        return 1
-def avaliaNaoDiscriminatorio(conjuntoDeDados):
-    return 1*(conjuntoDeDados['permissao']!='')
+    elif comparaSetComFormatosDoConjuntoDeDados(conjuntoDeDados,['pdf','xls','MiCrosoft Excel']):
+        return 0.2
+    else:
+        return 0
 def avaliaNaoProprietario(conjuntoDeDados):
-    return 1 - comparaSetComFormatosDoConjuntoDeDados(conjuntoDeDados,['xls','MiCrosoft Excel','shapefile'])
+    return 1 - (comparaSetComFormatosDoConjuntoDeDados(conjuntoDeDados,['xls','MiCrosoft Excel','shapefile']) and (not comparaSetComFormatosDoConjuntoDeDados(conjuntoDeDados,['kml','csv','geojson','pdf','xml','nt','rdf','ttl'])))
 def avaliaLicensaLivre(conjuntoDeDados):
-    return 
+    return int(1 * conjuntoDeDados['licensa'] == 'CC BY 4.0')
         
 def avaliaNivelAbertura():
     with open(glob("metricasNivelAberturaDataRio*.csv")[-1],'r',encoding = 'utf-8') as entrada:
         with open("NivelAberturaDataRio" + str(date.today().strftime("%Y%m%d%H%M%S"))+".csv",'w',encoding = 'utf-8', newline = '') as saida:
             csvReader = DictReader(entrada,delimiter=',')
             csvWriter = writer(saida)
-            csvWriter.writerow(['completo','primário','oportuno','acessível','processável por máquina','não discriminatório','não proprietário','licensa livre'])
+            csvWriter.writerow(['ID','nome','completo','primário','oportuno','acessível','processável por máquina','não discriminatório','não proprietário','licensa livre','NAD'])
             for row in csvReader:
                 nivelDeAbertura = {
+                    'id'                  : row['id'],
+                    'nome'                : row['nome'],
                     'completo'            : avaliaCompleto(row),
                     'primario'            : avaliaPrimario(row),
                     'opotuno'             : avaliaOportuno(row),
                     'acessivel'           : avaliaAcessivel(row),
                     'procesavelPorMaquina': avaliaProcessavelPorMaquina(row),
-                    'naoDiscriminatorio'  : avaliaNaoDiscriminatorio(row),
+                    'naoDiscriminatorio'  : 1,
                     'naoProprietario'     : avaliaNaoProprietario(row),
-                    'licensaLivre'        : avaliaLicensaLivre(row)
+                    'licensaLivre'        : avaliaLicensaLivre(row),
+                    'NAD': None
                 }
+                nivelDeAbertura['NAD'] ="{:.2f}".format(nivelDeAbertura['completo'] + nivelDeAbertura['primario']+ nivelDeAbertura['opotuno'] + nivelDeAbertura['acessivel'] +nivelDeAbertura['procesavelPorMaquina'] + nivelDeAbertura['naoDiscriminatorio'] + nivelDeAbertura['licensaLivre'])
                 csvWriter.writerow(list(nivelDeAbertura.values()))
 
 if __name__ =='__main__':
@@ -308,4 +310,4 @@ if __name__ =='__main__':
         
     
     
-#getconjuntoDeDados('https://www.data.rio/documents/5d5849bf28bf4f689214f890e3f4ac04/about',1)
+#getconjuntoDeDados('https://www.data.rio/documents/7ce897207dfa4da0bd9e951259121980/about',1)
